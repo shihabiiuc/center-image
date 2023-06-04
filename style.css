@@ -1,0 +1,103 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+h3 {
+  padding: 0;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.example {
+  padding: 90px 15px;
+  background-color: #c4c4c4;
+}
+.example:nth-child(even) {
+  background-color: #e3f8ff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 400px;
+  background-image: url("https://shihabiiuc.com/wp-content/uploads/2023/05/axis-wide-opacity-20.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.container img {
+  max-height: 150px;
+}
+
+.example-1 .container {
+  background-color: #54b36e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.example-2 .container {
+  background-color: #CAA212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.example-3 .container {
+  background-color: #7E54AE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.example-4 .container {
+  background-color: #3e8a00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.example-5 .container {
+  background-color: #CAA212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}/*# sourceMappingURL=style.css.map */
