@@ -21,6 +21,7 @@ h3 {
   }
 }
 .container {
+  // background-color: #8f0900;
   max-width: 900px;
   margin: 0 auto;
   min-height: 400px;
@@ -31,6 +32,21 @@ h3 {
 
   img {
     max-height: 150px;
+  }
+}
+// common styles for position method
+.position {
+  background-image: url('./img/method-two.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 400px 40px;
+  .container {
+    background-color: #a8ab00;
+  }
+  &:nth-child(even) {
+    .container {
+      background-color: #9100a1;
+    }
   }
 }
 // example 1
@@ -76,5 +92,66 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+  }
+}
+// USING POSITION & TRANSFORM PROPERTIES
+// example 6
+.example-6 {
+  .container {
+    position: relative;
+    img {
+      position: absolute;
+      top: 0; /* optional */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+// example 7
+.example-7 {
+  .container {
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+// example 8
+.example-8 {
+  .container {
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+// example 9
+.example-9 {
+  .container {
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+// example 10
+.example-10 {
+  .container {
+    position: relative;
+    img {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
   }
 }

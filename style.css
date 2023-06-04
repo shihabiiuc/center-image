@@ -37,6 +37,19 @@ h3 {
   max-height: 150px;
 }
 
+.position {
+  background-image: url("./img/method-two.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 400px 40px;
+}
+.position .container {
+  background-color: #a8ab00;
+}
+.position:nth-child(even) .container {
+  background-color: #9100a1;
+}
+
 .example-1 .container {
   background-color: #54b36e;
   display: -webkit-box;
@@ -100,4 +113,59 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.example-6 .container {
+  position: relative;
+}
+.example-6 .container img {
+  position: absolute;
+  top: 0; /* optional */
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.example-7 .container {
+  position: relative;
+}
+.example-7 .container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.example-8 .container {
+  position: relative;
+}
+.example-8 .container img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.example-9 .container {
+  position: relative;
+}
+.example-9 .container img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.example-10 .container {
+  position: relative;
+}
+.example-10 .container img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
