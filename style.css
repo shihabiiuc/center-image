@@ -39,6 +39,19 @@ h3 {
   max-height: 150px;
 }
 
+.flex {
+  background-image: url("./img/method-one.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 151px 29px;
+}
+.flex .container {
+  background-color: #a8ab00;
+}
+.flex:nth-child(even) .container {
+  background-color: #9100a1;
+}
+
 .position {
   background-image: url("./img/method-two.png");
   background-repeat: no-repeat;
@@ -66,20 +79,15 @@ h3 {
 }
 
 .example-1 .container {
-  background-color: #54b36e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .example-2 .container {
-  background-color: #caa212;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,20 +100,18 @@ h3 {
 }
 
 .example-3 .container {
-  background-color: #7e54ae;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .example-4 .container {
-  background-color: #3e8a00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +124,6 @@ h3 {
 }
 
 .example-5 .container {
-  background-color: #caa212;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +140,7 @@ h3 {
 }
 .example-6 .container img {
   position: absolute;
-  top: 0; /* optional */
+  top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -168,8 +173,8 @@ h3 {
 }
 .example-9 .container img {
   position: absolute;
+  left: 0;
   top: 50%;
-  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }

@@ -37,6 +37,21 @@ h3 {
     max-height: 150px;
   }
 }
+// common styles for flexbox
+.flex {
+  background-image: url("./img/method-one.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 151px 29px;
+  .container {
+    background-color: #a8ab00;
+  }
+  &:nth-child(even) {
+    .container {
+      background-color: #9100a1;
+    }
+  }
+}
 // common styles for position method
 .position {
   background-image: url("./img/method-two.png");
@@ -68,38 +83,36 @@ h3 {
   }
 }
 
-// USING FLEXBOX
+// ====================USING FLEXBOX
 // example 1
 .example-1 {
   .container {
-    background-color: #54b36e;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
   }
 }
+
 // example 2
 .example-2 {
   .container {
-    background-color: #caa212;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
 // example 3
 .example-3 {
   .container {
-    background-color: #7e54ae;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
   }
 }
+
 // example 4
 .example-4 {
   .container {
-    background-color: #3e8a00;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -108,20 +121,19 @@ h3 {
 // example 5
 .example-5 {
   .container {
-    background-color: #caa212;
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
 }
-// USING POSITION & TRANSFORM PROPERTIES
+// ======== USING POSITION & TRANSFORM PROPERTIES
 // example 6
 .example-6 {
   .container {
     position: relative;
     img {
       position: absolute;
-      top: 0; /* optional */
+      top: 0;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -145,6 +157,7 @@ h3 {
     position: relative;
     img {
       position: absolute;
+
       left: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -157,8 +170,8 @@ h3 {
     position: relative;
     img {
       position: absolute;
+      left: 0;
       top: 50%;
-      right: 0;
       transform: translateY(-50%);
     }
   }
@@ -175,6 +188,7 @@ h3 {
     }
   }
 }
+// ======================= USING GRID
 
 // example 11
 .example-11 {
@@ -183,6 +197,7 @@ h3 {
     justify-content: center;
   }
 }
+
 // example 12
 .example-12 {
   .container {
@@ -198,6 +213,7 @@ h3 {
     align-items: center;
   }
 }
+
 // example 14
 .example-14 {
   .container {
