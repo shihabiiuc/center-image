@@ -1,10 +1,13 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;
 }
 h3 {
@@ -25,7 +28,7 @@ h3 {
   max-width: 900px;
   margin: 0 auto;
   min-height: 400px;
-  background-image: url('https://shihabiiuc.com/wp-content/uploads/2023/05/axis-wide-opacity-20.png');
+  background-image: url("https://shihabiiuc.com/wp-content/uploads/2023/05/axis-wide-opacity-20.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -36,7 +39,7 @@ h3 {
 }
 // common styles for position method
 .position {
-  background-image: url('./img/method-two.png');
+  background-image: url("./img/method-two.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 267px 27px;
@@ -49,6 +52,23 @@ h3 {
     }
   }
 }
+// common styles for grid
+.grid {
+  background-image: url("./img/method-three.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 124px 29px;
+  .container {
+    background-color: #a8ab00;
+  }
+  &:nth-child(even) {
+    .container {
+      background-color: #9100a1;
+    }
+  }
+}
+
+// USING FLEXBOX
 // example 1
 .example-1 {
   .container {
@@ -61,7 +81,7 @@ h3 {
 // example 2
 .example-2 {
   .container {
-    background-color: #CAA212;
+    background-color: #caa212;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +90,7 @@ h3 {
 // example 3
 .example-3 {
   .container {
-    background-color: #7E54AE;
+    background-color: #7e54ae;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -88,7 +108,7 @@ h3 {
 // example 5
 .example-5 {
   .container {
-    background-color: #CAA212;
+    background-color: #caa212;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -153,5 +173,44 @@ h3 {
       bottom: 0;
       transform: translateX(-50%);
     }
+  }
+}
+
+// example 11
+.example-11 {
+  .container {
+    display: grid;
+    justify-content: center;
+  }
+}
+// example 12
+.example-12 {
+  .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+// example 13
+.example-13 {
+  .container {
+    display: grid;
+    align-items: center;
+  }
+}
+// example 14
+.example-14 {
+  .container {
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+// example 15
+.example-15 {
+  .container {
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
   }
 }
